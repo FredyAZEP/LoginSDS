@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaft.org" lang="es">
+<head>
+   <meta charset="UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
+<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+<title>Secretaría de Salud | Gobierno | gob.mx</title>
+
+<body>
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+        <span class="sr-only">Interruptor de Navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="subenlaces">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Desplegable <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Acción</a></li>
+            <li><a href="#">Otra acción</a></li>
+            <li><a href="#">Algo más aquí</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Enlace separado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+
+
+ <section class="section section-intro flag-banner" style="background: transparent url(/images/background_2.jpg) no-repeat center center; background-size: cover; top:0;">
+    <div id="videoContainer" class="video-container" style="position: absolute; top: 0;"></div>
+<div class="container">
+  <div class="section-intro__content" style="color: transparent;">
+    <h1>-</h1>
+    <p class="text-border">-</p>
+  </div>
+</div>
+</section>
+<br>
+<div class="container">
+<h3>Articulo 74 Frac. l</h3>
+<hr class="red">
+
+<div class="col-md-6">
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-01" aria-expanded="true" aria-controls="panel-01">
+        Aguascalientes
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-01"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-01">
+      <div class="panel-body">
+       
+
+	<div class="container mt-4">
+	<a th:href="@{/nuevo}" class="btn btn-primary">Nuevo</a>
+	<br> <br>
+		<table class="table">
+			<thead></thead>
+			<tbody>
+				<tr>
+					<td>ID</td>
+					<td>NOMBRE</td>
+					<td>AP.PATERNO</td>
+					<td>AP.MATERNO</td>
+					<td>EMAIL</td>
+					<td>PASSWORD</td>
+					<td>TELEFONO</td>
+					<td>DIRECCION</td>
+					<td>ROL</td>
+					<td>DESCRIPCION</td>
+					<td>ACTIVO</td>
+					<td>ACCIONES</td>
+				</tr>
+			</tbody>
+			<tbody>
+				<tr th:each="roles:${roles}">
+					<td th:text="${roles.id}"></td>
+					<td th:text="${roles.nombre}"></td>
+					<td th:text="${roles.app}"></td>
+					<td th:text="${roles.apm}"></td>
+					<td th:text="${roles.email}"></td>
+					<td th:text="${roles.password}"></td>
+					<td th:text="${roles.telefono}"></td>
+					<td th:text="${roles.direccion}"></td>
+					<td th:text="${roles.rol}"></td>
+					<td th:text="${roles.descripcion}"></td>
+					<td th:text="${roles.activo}"></td>
+					<td><a class="btn btn-warning">Editar </a> <a
+						class="btn btn-danger">Eliminar </a></td>
+				</tr>
+			</tbody>
+		</table>
+		
+
+	</div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-02" aria-expanded="true" aria-controls="panel-02">
+       Baja California
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-02"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-02">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="panel-03" aria-expanded="true" aria-controls="panel-03">
+   Baja California Sur
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-03"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-03">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-04" aria-expanded="true" aria-controls="panel-04">
+        Campeche
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-04"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-04">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-05" aria-expanded="true" aria-controls="panel-05">
+       Chiapas
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-05"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-05">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-06" aria-expanded="true" aria-controls="panel-06">
+  Chihuahua
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-06"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-06">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-07" aria-expanded="true" aria-controls="panel-07">
+       Coahuila de Zaragoza
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-07"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-07">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-08" aria-expanded="true" aria-controls="panel-08">
+       Colima
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-08"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-08">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-09" aria-expanded="true" aria-controls="panel-09">
+  		Distrito Federal
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-09"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-09">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-10" aria-expanded="true" aria-controls="panel-10">
+  		Durango
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-10"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-10">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-11" aria-expanded="true" aria-controls="panel-11">
+  		Estado de México
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-11"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-11">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-12" aria-expanded="true" aria-controls="panel-12">
+       Guanajuato
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-12"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-12">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-13" aria-expanded="true" aria-controls="panel-13">
+  			Guerrero
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-13"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-13">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-14" aria-expanded="true" aria-controls="panel-14">
+       Hidalgo
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-14"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-14">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-15" aria-expanded="true" aria-controls="panel-15">
+ 		Jalisco
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-15"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-15">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-16" aria-expanded="true" aria-controls="panel-16">
+       Michoacán de Ocampo
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-16"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-16">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-17" aria-expanded="true" aria-controls="panel-17">
+       Morelos
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-17"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-17">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-18" aria-expanded="true" aria-controls="panel-18">
+  		Nayarit
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-18"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-18">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-19" aria-expanded="true" aria-controls="panel-19">
+  		Nuevo León
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-19"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-19">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-20" aria-expanded="true" aria-controls="panel-20">
+      Oaxaca
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-20"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-20">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-21" aria-expanded="true" aria-controls="panel-21">
+       Puebla
+
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-21"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-21">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-22" aria-expanded="true" aria-controls="panel-22">
+   Querétaro
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-22"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-22">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-23" aria-expanded="true" aria-controls="panel-23">
+        Quintana Roo
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-23"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-23">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-24" aria-expanded="true" aria-controls="panel-24">
+       San Luis Potos
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-24"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-24">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-25" aria-expanded="true" aria-controls="panel-25">
+  Sinaloa
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-25"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-25">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-26" aria-expanded="true" aria-controls="panel-26">
+       Sonora
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-26"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-26">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-27" aria-expanded="true" aria-controls="panel-27">
+       Tabasco
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-27"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-27">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-28" aria-expanded="true" aria-controls="panel-28">
+  		Tamaulipas
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-28"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-28">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-29" aria-expanded="true" aria-controls="panel-29">
+  		Tlaxcala
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-29"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-29">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-30" aria-expanded="true" aria-controls="panel-30">
+  			Veracruz 
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-30"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-30">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a>
+        Yucatán
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-31"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-31">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-parent="#accordion" href="#panel-32" aria-expanded="true" aria-controls="panel-32">
+       Zacatecas
+        </a>
+      </h4>
+      <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-32"></button>
+    </div>
+    <div class="panel-collapse collapse in" id="panel-32">
+      <div class="panel-body">
+       LOL
+      </div>
+    </div>
+  </div>
+</div>
+
+
+</div>
+</div>
+
+
+ <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+ <script>
+  $gmx(document).ready(function() {
+    ...
+  });
+</script>
+</body>
+</html>
