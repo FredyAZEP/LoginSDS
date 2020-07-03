@@ -54,8 +54,14 @@
 </section>
 <br>
 <div class="container">
-<h3>Articulo 74 Frac. l</h3>
+   <h3><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  Articulo 74 Frac. l</h3>
 <hr class="red">
+<div class="row">
+  <div class="col-md-4"><div class="alert alert-success">$estado Reportes recibidos : $reportes</div></div>
+  <div class="col-md-4"><div class="alert alert-warning">$estado Reportes en proceso : $reportes</div></div>
+  <div class="col-md-4"><div class="alert alert-danger">$estado Reportes sin madar : $reportes</div></div>
+</div>
+
 
 <div class="col-md-6">
 
@@ -65,57 +71,14 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-01" aria-expanded="true" aria-controls="panel-01">
-        Aguascalientes
+           <span class="icon-infocircle" aria-hidden="true"></span>  Aguascalientes
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-01"></button>
     </div>
     <div class="panel-collapse collapse in" id="panel-01">
       <div class="panel-body">
-       
 
-	<div class="container mt-4">
-	<a th:href="@{/nuevo}" class="btn btn-primary">Nuevo</a>
-	<br> <br>
-		<table class="table">
-			<thead></thead>
-			<tbody>
-				<tr>
-					<td>ID</td>
-					<td>NOMBRE</td>
-					<td>AP.PATERNO</td>
-					<td>AP.MATERNO</td>
-					<td>EMAIL</td>
-					<td>PASSWORD</td>
-					<td>TELEFONO</td>
-					<td>DIRECCION</td>
-					<td>ROL</td>
-					<td>DESCRIPCION</td>
-					<td>ACTIVO</td>
-					<td>ACCIONES</td>
-				</tr>
-			</tbody>
-			<tbody>
-				<tr th:each="roles:${roles}">
-					<td th:text="${roles.id}"></td>
-					<td th:text="${roles.nombre}"></td>
-					<td th:text="${roles.app}"></td>
-					<td th:text="${roles.apm}"></td>
-					<td th:text="${roles.email}"></td>
-					<td th:text="${roles.password}"></td>
-					<td th:text="${roles.telefono}"></td>
-					<td th:text="${roles.direccion}"></td>
-					<td th:text="${roles.rol}"></td>
-					<td th:text="${roles.descripcion}"></td>
-					<td th:text="${roles.activo}"></td>
-					<td><a class="btn btn-warning">Editar </a> <a
-						class="btn btn-danger">Eliminar </a></td>
-				</tr>
-			</tbody>
-		</table>
-		
-
-	</div>
        
       </div>
     </div>
@@ -128,7 +91,8 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-02" aria-expanded="true" aria-controls="panel-02">
-       Baja California
+       <span class="icon-infocircle" aria-hidden="true"></span>  Baja California
+       
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-02"></button>
@@ -147,7 +111,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="panel-03" aria-expanded="true" aria-controls="panel-03">
-   Baja California Sur
+      <span class="icon-infocircle" aria-hidden="true"></span>  Baja California Sur
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-03"></button>
@@ -166,7 +130,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-04" aria-expanded="true" aria-controls="panel-04">
-        Campeche
+           <span class="icon-infocircle" aria-hidden="true"></span>  Campeche
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-04"></button>
@@ -185,7 +149,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-05" aria-expanded="true" aria-controls="panel-05">
-       Chiapas
+          <span class="icon-infocircle" aria-hidden="true"></span>  Chiapas
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-05"></button>
@@ -204,7 +168,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-06" aria-expanded="true" aria-controls="panel-06">
-  Chihuahua
+     <span class="icon-infocircle" aria-hidden="true"></span>  Chihuahua
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-06"></button>
@@ -222,7 +186,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-07" aria-expanded="true" aria-controls="panel-07">
-       Coahuila de Zaragoza
+          <span class="icon-infocircle" aria-hidden="true"></span>  Coahuila de Zaragoza
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-07"></button>
@@ -241,7 +205,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-08" aria-expanded="true" aria-controls="panel-08">
-       Colima
+          <span class="icon-infocircle" aria-hidden="true"></span>  Colima
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-08"></button>
@@ -260,7 +224,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-09" aria-expanded="true" aria-controls="panel-09">
-  		Distrito Federal
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Distrito Federal
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-09"></button>
@@ -277,7 +241,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-10" aria-expanded="true" aria-controls="panel-10">
-  		Durango
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Durango
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-10"></button>
@@ -295,7 +259,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-11" aria-expanded="true" aria-controls="panel-11">
-  		Estado de México
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Estado de México
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-11"></button>
@@ -312,7 +276,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-12" aria-expanded="true" aria-controls="panel-12">
-       Guanajuato
+          <span class="icon-infocircle" aria-hidden="true"></span>  Guanajuato
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-12"></button>
@@ -331,7 +295,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-13" aria-expanded="true" aria-controls="panel-13">
-  			Guerrero
+  			   <span class="icon-infocircle" aria-hidden="true"></span>  Guerrero
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-13"></button>
@@ -351,7 +315,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-14" aria-expanded="true" aria-controls="panel-14">
-       Hidalgo
+          <span class="icon-infocircle" aria-hidden="true"></span>  Hidalgo
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-14"></button>
@@ -370,7 +334,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-15" aria-expanded="true" aria-controls="panel-15">
- 		Jalisco
+ 		   <span class="icon-infocircle" aria-hidden="true"></span>  Jalisco
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-15"></button>
@@ -388,7 +352,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-16" aria-expanded="true" aria-controls="panel-16">
-       Michoacán de Ocampo
+          <span class="icon-infocircle" aria-hidden="true"></span>  Michoacán de Ocampo
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-16"></button>
@@ -407,7 +371,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-17" aria-expanded="true" aria-controls="panel-17">
-       Morelos
+          <span class="icon-infocircle" aria-hidden="true"></span>  Morelos
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-17"></button>
@@ -426,7 +390,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-18" aria-expanded="true" aria-controls="panel-18">
-  		Nayarit
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Nayarit
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-18"></button>
@@ -443,7 +407,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-19" aria-expanded="true" aria-controls="panel-19">
-  		Nuevo León
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Nuevo León
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-19"></button>
@@ -461,7 +425,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-20" aria-expanded="true" aria-controls="panel-20">
-      Oaxaca
+         <span class="icon-infocircle" aria-hidden="true"></span>  Oaxaca
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-20"></button>
@@ -480,7 +444,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-21" aria-expanded="true" aria-controls="panel-21">
-       Puebla
+          <span class="icon-infocircle" aria-hidden="true"></span>  Puebla
 
         </a>
       </h4>
@@ -500,7 +464,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-22" aria-expanded="true" aria-controls="panel-22">
-   Querétaro
+      <span class="icon-infocircle" aria-hidden="true"></span>  Querétaro
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-22"></button>
@@ -519,7 +483,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-23" aria-expanded="true" aria-controls="panel-23">
-        Quintana Roo
+           <span class="icon-infocircle" aria-hidden="true"></span>  Quintana Roo
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-23"></button>
@@ -538,7 +502,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-24" aria-expanded="true" aria-controls="panel-24">
-       San Luis Potos
+          <span class="icon-infocircle" aria-hidden="true"></span>  San Luis Potos
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-24"></button>
@@ -557,7 +521,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-25" aria-expanded="true" aria-controls="panel-25">
-  Sinaloa
+     <span class="icon-infocircle" aria-hidden="true"></span>  Sinaloa
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-25"></button>
@@ -575,7 +539,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-26" aria-expanded="true" aria-controls="panel-26">
-       Sonora
+          <span class="icon-infocircle" aria-hidden="true"></span>  Sonora
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-26"></button>
@@ -594,7 +558,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-27" aria-expanded="true" aria-controls="panel-27">
-       Tabasco
+          <span class="icon-infocircle" aria-hidden="true"></span>  Tabasco
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-27"></button>
@@ -613,7 +577,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-28" aria-expanded="true" aria-controls="panel-28">
-  		Tamaulipas
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Tamaulipas
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-28"></button>
@@ -631,7 +595,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-29" aria-expanded="true" aria-controls="panel-29">
-  		Tlaxcala
+  		   <span class="icon-infocircle" aria-hidden="true"></span>  Tlaxcala
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-29"></button>
@@ -649,7 +613,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-30" aria-expanded="true" aria-controls="panel-30">
-  			Veracruz 
+  			   <span class="icon-infocircle" aria-hidden="true"></span>  Veracruz 
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-30"></button>
@@ -668,7 +632,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a>
-        Yucatán
+           <span class="icon-infocircle" aria-hidden="true"></span>  Yucatán
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-31"></button>
@@ -688,7 +652,7 @@
     <div class="panel-heading">
       <h4 class="panel-title">
         <a data-parent="#accordion" href="#panel-32" aria-expanded="true" aria-controls="panel-32">
-       Zacatecas
+          <span class="icon-infocircle" aria-hidden="true"></span>  Zacatecas
         </a>
       </h4>
       <button type="button" class="collpase-button collapsed" data-parent="#accordion" data-toggle="collapse" href="#panel-32"></button>
