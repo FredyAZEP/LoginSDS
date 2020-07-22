@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeLeaft.org">
+<html xmlns:th="http://www.thymeLeaft.org" lang="es">
 <head>
 <link href="/favicon.ico" rel="shortcut icon">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +8,37 @@
 <title>Secretaría de Salud | Gobierno | gob.mx</title>
 
 <body>
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+        <span class="sr-only">Interruptor de Navegaci�n</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="subenlaces">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a th:href="@{/login}">Cerrar Secion</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Desplegable <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Acci�n</a></li>
+            <li><a href="#">Otra acci�n</a></li>
+            <li><a href="#">Algo m�s aqu�</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Enlace separado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+<br>
  <section class="section section-intro flag-banner" style="background: transparent url(/images/background_2.jpg) no-repeat center center; background-size: cover; top:0;">
     <div id="videoContainer" class="video-container" style="position: absolute; top: 0;"></div>
 <div class="container">
@@ -21,7 +52,7 @@
  
 
 <div class="container">
-<h3>Plataforma de Recepción de Archivos de Productos de Nomina</h3>
+ <h3>Plataforma de Recepción de Archivos de Productos de Nomina</h3>
 <hr class="red">
 <div class="container center-h center-v">
 <div class="card mb-3" style="max-width: 540px;" >
@@ -32,7 +63,7 @@
 
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Articulo 74 Frac. l</h5>
+        <h5 class="card-title"> <span class="glyphicon glyphicon-book" aria-hidden="true"></span>  Articulo 74 Frac. l</h5>
         <p class="card-text">Información  de los productos de Nómina  Ferderal X00/610/416.</p>
 
           <a href="/home/74Frac1" class="btn btn-primary">Ingresar</a>
@@ -52,7 +83,7 @@
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h5 class="card-title">Articulo 74 Frac. II</h5>
+        <h5 class="card-title"><span class="glyphicon glyphicon-book" aria-hidden="true"></span>  Articulo 74 Frac. II</h5>
         <p class="card-text">Información  de los productos de Nómina del Articulo 74.</p>
 
           <a href="#" class="btn btn-primary">Ingresar</a>

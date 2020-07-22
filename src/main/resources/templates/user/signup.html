@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+<html xmlns="http://www.w3.org/1999/xhtml"
  xmlns:th="http://www.thymeleaf.org">
+
 <head>
- <title>Sign up</title>
- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
- <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
-</head>
+ <meta charset="UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
+<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+<title>Secretaría de Salud | Gobierno | gob.mx</title></head>
 <body>
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+        <span class="sr-only">Interruptor de Navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="subenlaces">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a th:href="@{/login}">Regresar</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Desplegable <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Acción</a></li>
+            <li><a href="#">Otra acción</a></li>
+            <li><a href="#">Algo más aquí</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Enlace separado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
  <div class="container">
      <form class="form-horizontal" role="form" method="POST" th:action="@{/signup}" th:object="${user}">
       <div class="row">
@@ -18,88 +50,81 @@
      </div>
              </div>
          </div>
-         <div class="row">
-             <div class="col-md-3"></div>
-             <div class="col-md-6">
-                 <h2>Register New User</h2>
-                 <hr>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3 field-label-responsive">
-                 <label for="name">First Name</label>
-             </div>
-             <div class="col-md-6">
-                 <div class="form-group">
-                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                         <input type="text" th:field="*{firstname}" class="form-control" id="firstname"
-                                placeholder="First Name" required autofocus>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3 field-label-responsive">
-                 <label for="name">Last Name</label>
-             </div>
-             <div class="col-md-6">
-                 <div class="form-group">
-                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-user"></i></div>
-                         <input type="text" th:field="*{lastname}" class="form-control" id="lastname"
-                                placeholder="Last name" required autofocus>
-                     </div>
-                 </div>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3 field-label-responsive">
-                 <label for="email">Email</label>
-             </div>
-             <div class="col-md-6">
-                 <div class="form-group">
-                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-at"></i></div>
-                         <input type="text" th:field="*{email}" class="form-control" id="email"
-                                placeholder="username@jackrutorial.com" required autofocus>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-md-3">
+
+<div class="row">
+  <div class="container">
+ <br>
+<div class="container">
+    	<div class="row">
+			<div class="col-md-6 col-md-offset-3">
+				<div class="panel panel-login">
+					<div class="panel-heading">
+						<div class="row">
+						<div class="text-center">
+							<h3>
+                              Nuevo Registro
+                                     <small class="text-muted">Secretaria de Salud</small>
+                                    </h3>
+                                    <hr class="red">
+                                    <br>
+                                    <img src="/images/nuevousu.png" class="rounded mx-auto d-block" alt="...">
+						</div>
+						</div>
+						
+						<hr>
+					</div>
+					<div class="panel-body">
+						<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Nombre</label>
+    <input  type="text" th:field="*{firstname}" class="form-control" id="firstname" aria-describedby="emailHelp">
+    
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Apellidos</label>
+    <input type="text" th:field="*{lastname}" class="form-control" id="lastname" aria-describedby="emailHelp">
+   
+  </div>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Correo Electronico</label>
+    <input type="text" th:field="*{email}" class="form-control" id="email" aria-describedby="emailHelp">
+   <div class="col-md-3">
                  <div class="form-control-feedback">
                          <span class="text-danger align-middle" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">
                          </span>
                  </div>
-             </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3 field-label-responsive">
-                 <label for="password">Password</label>
-             </div>
-             <div class="col-md-6">
-                 <div class="form-group has-danger">
-                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
-                         <div class="input-group-addon" style="width: 2.6rem"><i class="fa fa-key"></i></div>
-                         <input type="password" th:field="*{password}" class="form-control" id="password"
-                                placeholder="Password" required>
-                     </div>
-                 </div>
-             </div>
-             <div class="col-md-3">
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Contraseña</label>
+    <input type="password" th:field="*{password}" class="form-control" id="password">
+    <div class="col-md-3">
                  <div class="form-control-feedback">
                          <span class="text-danger align-middle" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">
                          </span>
                  </div>
              </div>
-         </div>
-         <div class="row">
-             <div class="col-md-3"></div>
-             <div class="col-md-6">
-                 <button type="submit" class="btn btn-success"><i class="fa fa-user-plus"></i> Register</button>
-             </div>
-         </div>
+  </div>
+  
+  <button type="submit" class="btn btn-primary">Registrar</button>
+</form>
+					
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+  
+    </div>
+    </div>
      </form>
  </div>
+  <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+ <script>
+  $gmx(document).ready(function() {
+    ...
+  });
+</script>
 </body>
 </html>

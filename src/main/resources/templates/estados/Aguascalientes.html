@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaft.org" lang="es">
+<head>
+   <meta charset="UTF-8">
+<link href="/favicon.ico" rel="shortcut icon">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
+<link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+<title>Secretaría de Salud | Gobierno | gob.mx</title>
+</head>
+<body>
+<nav class="navbar navbar-inverse sub-navbar navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#subenlaces">
+        <span class="sr-only">Interruptor de Navegación</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+    </div>
+    <div class="collapse navbar-collapse" id="subenlaces">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="/home/74Frac1">Regresar</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Desplegable <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Acción</a></li>
+            <li><a href="#">Otra acción</a></li>
+            <li><a href="#">Algo más aquí</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Enlace separado</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+ <section class="section section-intro flag-banner" style="background: transparent url(/images/background_2.jpg) no-repeat center center; background-size: cover; top:0;">
+    <div id="videoContainer" class="video-container" style="position: absolute; top: 0;"></div>
+<div class="container">
+  <div class="section-intro__content" style="color: transparent;">
+    <h1>-</h1>
+    <p class="text-border">-</p>
+  </div>
+</div>
+</section>
+<br>
+<br>
+<br>
+<div class="container">
+<h3><span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>  Articulo 74 Frac. l</h3>
+<hr class="red">
+</div>
+
+<div class="col-md-8">
+
+
+
+
+<div class="col-md-15">
+
+
+<div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        
+           <span class="glyphicon glyphicon-usd" aria-hidden="true"></span> Aguascalientes
+        
+      </h4>
+    
+    </div>
+    <div class="panel-collapse collapse in" id="panel-01">
+      <div class="panel-body">
+	<table class="table">
+  <thead >
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">anio</th>
+      <th scope="col">qna</th>
+      <th scope="col">Nombre</th>
+      <th scope="col">UR_416_PER</th>
+      <th scope="col">UR_416_DED</th>
+      <th scope="col">UR_X00_PER</th>
+      <th scope="col">UR_X00_DED</th>
+      <th scope="col">UR_610_PER</th>
+      <th scope="col">UR_610_DED</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="resultados:${resultados}">
+       <td th:text="${resultados.id}">${resultados.id}</td>
+      <td th:text="${resultados.anio}">${resultados.anio}</td>
+      <td th:text="${resultados.qna}">${resultados.qna}</td>
+      <td th:text="${resultados.nombre}">${resultados.nombre}</td>
+      <td th:text="${resultados.UR_416_PER}">${resultados.UR_416_PER}</td>
+      <td th:text="${resultados.UR_416_DED}">${resultados.UR_416_DED}</td>
+      <td th:text="${resultados.UR_X00_PER}">${resultados.UR_X00_PER}</td>
+      <td th:text="${resultados.UR_X00_DED}">${resultados.UR_X00_DED}</td>
+      <td th:text="${resultados.UR_610_PER}">${resultados.UR_610_PER}</td>
+      <td th:text="${resultados.UR_610_DED}">${resultados.UR_610_DED}</td>
+      
+    </tr>
+    
+  </tbody>
+</table>
+
+
+       
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+<div class="row"> 
+
+
+ <div class="col-md-3">
+ <div class="panel-group ficha-collapse" id="accordion">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        
+          <span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> Linea del Tiempo
+        
+      </h4>
+      
+    </div>
+    <div class="panel-collapse collapse in" id="panel-32">
+      <div class="panel-body">
+       <div class="container">
+  <div class="col-md-3"><div class="alert alert-success"> <strong>Linea del Tiempo:</strong> </div></div>
+  
+</div>
+       
+      </div>
+    </div>
+  </div>
+</div>
+<!-- -------------------------------------------------- -->
+
+
+
+
+</div>
+</div>
+
+
+
+ <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+ <script>
+  $gmx(document).ready(function() {
+    ...
+  });
+</script>
+</body>
+</html>

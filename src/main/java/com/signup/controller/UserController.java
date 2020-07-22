@@ -19,7 +19,7 @@ public class UserController {
 	 @Autowired
 	 private UserService userService;
 	
-	 @RequestMapping(value= {"/", "/login"}, method=RequestMethod.GET)
+	 @RequestMapping(value= {"/login"}, method=RequestMethod.GET)
 	 public ModelAndView login() {
 	  ModelAndView model = new ModelAndView();
 	  
@@ -67,17 +67,7 @@ public class UserController {
 	  model.setViewName("home/index");
 	  return model;
 	 }
-	 
-	 @RequestMapping(value= {"/home/74Frac1"}, method=RequestMethod.GET)
-	 public ModelAndView home2() {
-	  ModelAndView model = new ModelAndView();
-	  Authentication auth = SecurityContextHolder.getContext().getAuthentication();
-	  User user = userService.findUserByEmail(auth.getName());
-	  
-	  model.addObject("userName", user.getFirstname() + " " + user.getLastname());
-	  model.setViewName("home/74Frac1");
-	  return model;
-	 }
+	
 	 
 	 @RequestMapping(value= {"/access_denied"}, method=RequestMethod.GET)
 	 public ModelAndView accessDenied() {
