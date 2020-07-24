@@ -267,63 +267,7 @@
         </div>
 
 
-        <div class="row">
-                    <div class="col-lg-12">
 
-
-                   
-                    
-                    <div class="col-sm-5">
-                        <div class="statistic-box">
-                        <div class="panel-group ficha-collapse" id="accordion">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        
-           <span class="glyphicon glyphicon-send" aria-hidden="true"></span>  Seleccione un Estado
-        
-      </h4>
-    
-    </div>
-			
-<table class="table table-hover">
-  <thead >
-    <tr>
-      <td scope="col">Id</td>
-      <td scope="col">Año</td>
-      <td scope="col">Quincena</td>
-      <td scope="col">Nombre</td>
-      <td scope="col">UR_416_PER</td>
-      <td scope="col">UR_416_DED</td>
-      <td scope="col">UR_X00_PER</td>
-      <td scope="col">UR_X00_DED</td>
-      <td scope="col">UR_610_PER</td>
-      <td scope="col">UR_610_DED</td>
-    </tr>
-  </thead>
-  <tbody>
-    <tr th:each="resultados:${resultados}">
-       <td th:text="${resultados.id}">${resultados.id}</td>
-      <td th:text="${resultados.anio}">${resultados.anio}</td>
-      <td th:text="${resultados.qna}">${resultados.qna}</td>
-      <td th:text="${resultados.nombre}">${resultados.nombre}</td>
-      <td th:text="${resultados.UR_416_PER}">${resultados.UR_416_PER}</td>
-      <td th:text="${resultados.UR_416_DED}">${resultados.UR_416_DED}</td>
-      <td th:text="${resultados.UR_X00_PER}">${resultados.UR_X00_PER}</td>
-      <td th:text="${resultados.UR_X00_DED}">${resultados.UR_X00_DED}</td>
-      <td th:text="${resultados.UR_610_PER}">${resultados.UR_610_PER}</td>
-      <td th:text="${resultados.UR_610_DED}">${resultados.UR_610_DED}</td>
-      
-    </tr>
-    
-  </tbody>
-</table>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
 </div>
 
 
@@ -336,7 +280,7 @@
                                 <h5>Quincena 7 Resumen de Envios</h5>
                                 <div class="pull-right">
 
-                                Fecha Limite 22 de Abril del 2016
+                              
                                 </div>
 
                             </div>
@@ -359,23 +303,45 @@
                                             <br>
                                             <small>Act. 13-Abr-2016 12:34:18</small>
                                         </td>
-                                        <td class="project-completion">
-                                        	<strong>	 416 $ 200,000,00.00</strong>
+                                        <td class="project-completion" th:text="${resultados.UR_416_PER}">
+                                        	<strong>${resultados.UR_416_PER}</strong>
                                              <div>   
         										     <small> Perc.: $ 180,000,00.00 </small><br>
         										      <small> Dedus.: $ 20,000,00.00 </small>
 										     </div>
 
                                         </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
+                                        <td class="project-completion" th:text="${resultados.UR_416_DED}">
+                                              <strong>   ${resultados.UR_416_DED} </strong>
                                              <div>   
 										     <small> P.: $ 180,000,00.00 </small><br>
 										      <small> D.: $ 20,000,00.00 </small>
 										     </div>
                                         </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
+                                        <td class="project-completion"  th:text="${resultados.UR_X00_PER}">
+                                              <strong>   ${resultados.UR_X00_DED} </strong>
+                                             <div>   
+										     <small> Perc.: $ 180,000,00.00 </small><br>
+										      <small> D.: $ 20,000,00.00 </small>
+										     </div>
+                                        </td>
+                                        <td class="project-completion"  th:text="${resultados.UR_X00_DED}" >
+                                        	<strong>${resultados.UR_X00_DED}</strong>
+                                             <div>   
+        										     <small> Perc.: $ 180,000,00.00 </small><br>
+        										      <small> Dedus.: $ 20,000,00.00 </small>
+										     </div>
+
+                                        </td>
+                                        <td class="project-completion"th:text="${resultados.UR_610_PER}">
+                                              <strong>   ${resultados.UR_610_PER} </strong>
+                                             <div>   
+										     <small> P.: $ 180,000,00.00 </small><br>
+										      <small> D.: $ 20,000,00.00 </small>
+										     </div>
+                                        </td>
+                                        <td class="project-completion"  th:text="${resultados.UR_610_DED}">
+                                              <strong>  ${resultados.UR_610_DED} </strong>
                                              <div>   
 										     <small> Perc.: $ 180,000,00.00 </small><br>
 										      <small> D.: $ 20,000,00.00 </small>
@@ -398,366 +364,13 @@
                                             <a id="timeline" href="ptfma_timeline.php?id=Aguascalientes" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x "></i></a>
                                         </td>
                                     </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-primary2">Aceptado</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Baja California</a>
-                                            <br>
-                                            <small>Act. 12-Abr-2016 10:34:18</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
+                                   
 
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-                                        <td class="project-people">
-
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-
-                                        </td>
-                                        <td class="project-actions">
-                                     <a id="timeline1" href="ptfma_timeline.php?id=Baja_California" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i></a>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-warning2">Pendiente</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Baja California Sur</a>
-                                            <br>
-                                            <small>Act. 13-Abr-2016 12:34:18</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-                                        </td>
-                                        <td class="project-actions">
-                                            <a id="timeline2" href="ptfma_timeline.php?id=Baja_California_Sur" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i> </a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-primary2">Aceptado</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Campeche</a>
-                                            <br>
-                                            <small>Created 22.07.2014</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-                                        </td>
-                                        <td class="project-actions">
-                                            <a id="timeline3" href="ptfma_timeline.php?id=Campeche" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i> </a>
-                                            
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-primary2">Aceptado</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Coahuila</a>
-                                            <br>
-                                            <small>Act. 13-Abr-2016 12:04:18</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-
-
-                                        </td>
-                                        <td class="project-actions">
-
-                                            <a id="timeline4" href="ptfma_timeline.php?id=Coahuila" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i></a>
-
-
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-primary2">Aceptado</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Colima</a>
-                                            <br>
-                                            <small>Act. 10-Abr-2016 12:34:18</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-                                        </td>
-                                        <td class="project-actions">
-                                            <a id="timeline5" href="ptfma_timeline.php?id=Colima" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-primary2">Aceptado</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Chiapas</a>
-                                            <br>
-                                            <small>Created 11.08.2014</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-
-
-                                        </td>
-                                        <td class="project-actions">
-                                            <a id="timeline6" href="ptfma_timeline.php?id=Chiapas" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i></a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="project-status">
-                                            <span class="label label-success">Proceso</span>
-                                        </td>
-                                        <td class="project-title">
-                                            <a href="#">Chihuaha</a>
-                                            <br>
-                                            <small>Act. 12-Abr-2016 11:34:18</small>
-                                        </td>
-                                        <td class="project-title">
-                                        		
-                                              <strong>   416 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   X00 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> P.: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-                                        <td class="project-completion">
-                                              <strong>   610 $ 200,000,00.00 </strong>
-                                             <div>   
-										     <small> Ingresos: $ 180,000,00.00 </small><br>
-										      <small> D.: $ 20,000,00.00 </small>
-										     </div>
-                                        </td>
-
-
-
-                                        <td class="project-people">
-
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test.pdf">
-                                              <i class="fa fa-file-pdf-o fa-2x"></i>
-                                              </a>
-                                              <a id="view-pdf" class="btn btn-outline btn-default view-pdf" href="../ods/test2.pdf">
-                                              <i class="fa fa-file-image-o fa-2x"></i>
-                                              </a>
-
-
-                                        </td>
-                                        <td class="project-actions">
-                                            <a id="timeline7" href="ptfma_timeline.php?id=Chihuahua" class="btn btn-w-m btn-outline btn-info"><i class="fa fa-calendar fa-2x"></i> </a>
-                                        </td>
-                                    </tr>
                            
-    </div>
 
 
-        <div class="footer">
-            <div class="pull-right">
-                10GB of <strong>250GB</strong> Free.
-            </div>
-            <div>
-                <strong>Copyright</strong> Example Company &copy; 2014-2015
-            </div>
-        </div>
+
+       
         </div>
         <div id="right-sidebar">
             <div class="sidebar-container">
