@@ -20,6 +20,7 @@
 
             <link href="/css/plugins/dropzone/basic.css" rel="stylesheet">
             <link href="/css/plugins/dropzone/dropzone.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 
 <title>Secretaría de Salud | Gobierno | gob.mx</title>
 </head>
@@ -295,7 +296,7 @@
        <tbody>
                                     <tr th:each="resultados:${resultados}">
                                         <td class="project-status">
-                                            <span class="label label-primary2" style="background-color:#1ABF04">Aceptado</span>
+                                            <span><i class="far fa-check-square"></i></span>
                                         </td>
 
                                         <td class="project-title" th:text="${resultados.nombre}">
