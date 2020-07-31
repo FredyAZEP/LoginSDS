@@ -39,7 +39,7 @@ h5 {
   font-weight: 600;
 }
 .nav > li > a {
-  color: #ffffff;
+  color: #a7b1c2;
   font-weight: 600;
   padding: 14px 20px 14px 25px;
 }
@@ -51,7 +51,7 @@ h5 {
 }
 .navbar-default .nav > li > a:hover,
 .navbar-default .nav > li > a:focus {
-  background-color: #293846;
+  background-color: #A4A4A4;
   color: white;
 }
 .nav .open > a,
@@ -70,8 +70,8 @@ h5 {
   border: 0;
 }
 .navbar-default {
-  background-color: transparent;
-  border-color: #ffffff;
+  background-color:;
+  border-color: #2f4050;
 }
 .navbar-top-links li {
   display: inline-block;
@@ -168,7 +168,7 @@ h5 {
 }
 .nav > li.active {
   border-left: 4px solid #19aa8d;
-  background: #293846;
+  background: #D8D8D8;
 }
 .nav.nav-second-level > li.active {
   border: none;
@@ -177,7 +177,7 @@ h5 {
   height: auto !important;
 }
 .nav-header a {
-  color: #DFE4ED;
+  color: #000000;
 }
 .nav-header .text-muted {
   color: #8095a8;
@@ -1038,7 +1038,7 @@ button.dim:active:before {
 }
 .label-primary,
 .badge-primary {
-  background-color: #1ab394;
+  background-color: #6E6E6E;
   color: #FFFFFF;
 }
 .label-success,
@@ -1048,7 +1048,7 @@ button.dim:active:before {
 }
 .label-warning,
 .badge-warning {
-  background-color: #f8ac59;
+  background-color: #6E6E6E;
   color: #FFFFFF;
 }
 .label-warning-light,
@@ -1063,7 +1063,7 @@ button.dim:active:before {
 }
 .label-info,
 .badge-info {
-  background-color: #23c6c8;
+  background-color: #6E6E6E;
   color: #FFFFFF;
 }
 .label-inverse,
@@ -3230,7 +3230,7 @@ a.forum-item-title:hover {
 }
 body {
   font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  background-color: #2f4050;
+  background-color: #D8D8D8;
   font-size: 13px;
   color: #676a6c;
   overflow-x: hidden;
@@ -7473,7 +7473,7 @@ body.skin-2 {
 }
 .skin-2 #side-menu > li > a,
 .skin-2 .nav.nav-second-level > li > a {
-  color: #586b7d;
+  color: #586bd;
 }
 .skin-2 .nav > li.active > a {
   color: #213a53;
